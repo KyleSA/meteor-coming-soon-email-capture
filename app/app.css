@@ -33,7 +33,26 @@ body {
 }
 
 #welcome {
+	max-width:300px;
+	height:450px;
+	opacity:0.85;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+	 padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
 	text-align:center;
+}
+
+#strapline {
+	padding: 10px 0px 0px;
+	color:purple;
 }
 
 #welcome .hero-unit {
