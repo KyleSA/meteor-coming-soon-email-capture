@@ -1,7 +1,6 @@
 <head>
   <title>zubuntu &middot; kickstart your stokvel</title>
-
-  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -16,16 +15,18 @@
 
 <template name = "landing">
   <div id="welcome">
-		<img id="logo" src="./zubuntu_logo.png" alt=""/>
-			<div id="strapline" 
-				<p> kickstart your <strong>stokvel</strong> </p>
-			</div>
-			<p> We're making stokvels easier. Find one in your area. Or start you own.</p>
-				 <div id="request-invite" class="form-inline">
-			    	{{> signup}}
-				 </div>
-				 	<div class="well"
+		<div class="row">
+		  <div class="col-md-6"><h1> Kickstart <br> your <br> stokvel. </h1></div>
+		  <div class="col-md-6"><img id="logo" src="./zubuntu_logo.png" alt=""/>
+				<div id="strapline" 
+					<p> We're making stokvels easier. </p> <p> Find one in your area. Or start your own. </p>
+					 <div id="request-invite" class="form-inline">
+				    	{{> signup}}
+					 </div>
+						<p class="help-block"> We send out invites from time to time. We won't send you spam or clutter your inbox. We'll just send you a friendly update when we're ready to launch. </p>
 					</div>
+					</div>
+		</div>
   </div>
 </template>
 
@@ -45,7 +46,7 @@
         <span class="add-on"><i class="icon-envelope"></i></span>
         <input type="text" value="" class="" id="email-for-mailchimp" placeholder="Your email address..." size="30">
       </div>
-      <input type="submit" value="Notify Me" name="submit" id="mailchimp-submit" class="btn btn-primary"><p class="help-block">No spam. Just a heads up when we're ready for you.</p>
+      <input type="submit" value="Request an invite" name="submit" id="mailchimp-submit" class="btn btn-outline-inverse btn-lg">
     </form>
   {{/if}}
 

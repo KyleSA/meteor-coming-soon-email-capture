@@ -1,11 +1,11 @@
-@font-face {
+/*@font-face {
 	font-family: Conv_Stag-Light;
 	src: url('/fonts/Stag-Light.eot');
 	src: local('☺'), url('/fonts/Stag-Light.woff') format('woff'), url('/fonts/Stag-Light.ttf') format('truetype'), url('/fonts/Stag-Light.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
-
+*/
 @font-face {
 	font-family: Conv_Stag-Bold;
 	src: url('/fonts/Stag-Bold.eot');
@@ -28,7 +28,7 @@
 /* full-screen bg image */
 /* From Rails Prelaunch */
 body {
-	padding-top:80px;
+	padding-top:70px;
 	background:url(./zubuntu_hands.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -49,26 +49,39 @@ body {
 }
 
 #welcome {
-	max-width:300px;
-	height:450px;
+	 /*max-width:300px;*/
+	 height:450px;
 	 padding: 19px 29px 29px;
    margin: 0 auto 20px;
 	 text-align:center;
+	/* border:1px;*/
+	/* border-color:#fff;*/
 }
 
 #strapline {
-	font-family: Conv_Stag-Light;
-	padding: 10px 0px 0px;
+	font-family: 'Istok Web', sans-serif;
+	padding: 40px 0px 0px;
 	color:#fff;
 }
 
-#welcome .hero-unit {
+#welcome .jumbotron {
 	background:url(./bg.png);
 	padding:40px;
 }
 
 #welcome h1 {
-	margin-bottom:40px;
+	font-family: 'Istok Web', sans-serif;
+	color:#fff;
+	/*text-align:left;*/
+	font-weight:700;
+	font-size:100px;
+	line-height: 1.2;
+	opacity:0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
+	margin:0px -20px;
+}
+#welcome #logo {
+	padding-top:25px;
 }
 
 #welcome #request-invite {
@@ -87,9 +100,12 @@ body {
 }
 
 #welcome .help-block {
+	opacity: 0.8;
 	font-size:10px;
-	color:gray;
+	color:#fff;
 	margin-top:15px;
+	padding-left: 90px;
+	padding-right: 90px;
 }
 
 #welcome #well {
