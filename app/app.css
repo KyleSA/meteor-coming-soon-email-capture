@@ -1,3 +1,19 @@
+@font-face {
+	font-family: Conv_Stag-Light;
+	src: url('/fonts/Stag-Light.eot');
+	src: local('☺'), url('/fonts/Stag-Light.woff') format('woff'), url('/fonts/Stag-Light.ttf') format('truetype'), url('/fonts/Stag-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Conv_Stag-Bold;
+	src: url('/fonts/Stag-Bold.eot');
+	src: local('☺'), url('/fonts/Stag-Bold.woff') format('woff'), url('/fonts/Stag-Bold.ttf') format('truetype'), url('/fonts/Stag-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 #configure-login-service-dialog {
 	-webkit-box-shadow: 0px 0px 10px #000;
 	-moz-box-shadow: 0px 0px 10px #000;
@@ -12,7 +28,7 @@
 /* full-screen bg image */
 /* From Rails Prelaunch */
 body {
-	padding-top:60px;
+	padding-top:80px;
 	background:url(./zubuntu_hands.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -35,24 +51,15 @@ body {
 #welcome {
 	max-width:300px;
 	height:450px;
-	opacity:0.85;
-	filter:alpha(opacity=80); /* For IE8 and earlier */
 	 padding: 19px 29px 29px;
-    margin: 0 auto 20px;
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-            box-shadow: 0 1px 2px rgba(0,0,0,.05);
-	text-align:center;
+   margin: 0 auto 20px;
+	 text-align:center;
 }
 
 #strapline {
+	font-family: Conv_Stag-Light;
 	padding: 10px 0px 0px;
-	color:purple;
+	color:#fff;
 }
 
 #welcome .hero-unit {
