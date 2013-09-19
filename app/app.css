@@ -71,15 +71,30 @@ body {
 
 #welcome h1 {
 	font-family: 'Istok Web', sans-serif;
-	color:#fff;
+	color:black;
 	/*text-align:left;*/
 	font-weight:700;
 	font-size:100px;
 	line-height: 1.2;
-	opacity:0.5;
-	filter:alpha(opacity=50); /* For IE8 and earlier */
+	opacity:0.2;
+	filter:alpha(opacity=20); /* For IE8 and earlier */
 	margin:0px -20px;
 }
+
+.g-type-image {
+	display: inline-block;
+	margin: 0;
+	padding: 2px 5px;
+	font-family: "Istok Web","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+	color: #fff;
+	background-color: white;
+}
+
+.pinstripe-border {
+	border: solid 1px;
+	color: #fff;
+}
+
 #welcome #logo {
 	padding-top:25px;
 }
@@ -136,6 +151,15 @@ body {
 	position:relative;
 	top:-5px;
 	left:5px;
+}
+
+#welcome .thank-you {
+	color: #fff;
+}
+
+#welcome #tick {
+	max-height: 35px;
+	max-width: 35px;
 }
 
 .btn.loading {

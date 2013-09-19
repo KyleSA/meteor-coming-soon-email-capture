@@ -16,7 +16,7 @@
 <template name = "landing">
   <div id="welcome">
 		<div class="row">
-		  <div class="col-md-6"><h1> Kickstart <br> your <br> stokvel. </h1></div>
+		  <div class="col-md-6"><h1 class = "g-type-image"> Kickstart <br> your <br> stokvel. </h1></div>
 		  <div class="col-md-6"><img id="logo" src="./zubuntu_logo.png" alt=""/>
 				<div id="strapline" 
 					<p> We're making stokvels easy. </p> <p> Find one in your area. Or start your own. </p>
@@ -33,7 +33,8 @@
 <template name = "signup">
   {{#if emailSubmitted }}
   <div id="thanks">
-    <h1>Thank You!</h1>
+		<img id="tick" src="./tick.png" alt=""/>
+    <h3 class= "thank-you">Thank You!</h3>
     Check your inbox to confirm your email
   </div>
   {{else }}
